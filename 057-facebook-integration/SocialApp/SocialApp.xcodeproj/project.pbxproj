@@ -33,7 +33,7 @@
 		B5B9520616E2474B004E677C /* TwitterFollowersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B9520516E2474B004E677C /* TwitterFollowersViewController.m */; };
 		B5F096C716E3D96800C48924 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5204A7D16D1DDE6009345DD /* Social.framework */; };
 		B5F096C816E3D96D00C48924 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5204A7B16D1DBEB009345DD /* Accounts.framework */; };
-		DC85A2200CEF4FFAB352BF8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E129D9992BD546E59328448A /* libPods.a */; };
+		CC120F7B179F563800B1DD4A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC120F7A179F563800B1DD4A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,7 @@
 		B551F4E116E2B46600F3776B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		B5B9520416E2474B004E677C /* TwitterFollowersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterFollowersViewController.h; sourceTree = "<group>"; };
 		B5B9520516E2474B004E677C /* TwitterFollowersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterFollowersViewController.m; sourceTree = "<group>"; };
-		E129D9992BD546E59328448A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC120F7A179F563800B1DD4A /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = SocialApp/libPods.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC120F7B179F563800B1DD4A /* libPods.a in Frameworks */,
 				B5F096C816E3D96D00C48924 /* Accounts.framework in Frameworks */,
 				B5F096C716E3D96800C48924 /* Social.framework in Frameworks */,
 				B5204A5716D1DB79009345DD /* UIKit.framework in Frameworks */,
 				B5204A5916D1DB79009345DD /* Foundation.framework in Frameworks */,
 				B5204A5B16D1DB79009345DD /* CoreGraphics.framework in Frameworks */,
-				DC85A2200CEF4FFAB352BF8D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,13 +115,13 @@
 		B5204A5516D1DB79009345DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC120F7A179F563800B1DD4A /* libPods.a */,
 				B5204A7D16D1DDE6009345DD /* Social.framework */,
 				B5204A7B16D1DBEB009345DD /* Accounts.framework */,
 				B5204A7916D1DBE4009345DD /* Twitter.framework */,
 				B5204A5616D1DB79009345DD /* UIKit.framework */,
 				B5204A5816D1DB79009345DD /* Foundation.framework */,
 				B5204A5A16D1DB79009345DD /* CoreGraphics.framework */,
-				E129D9992BD546E59328448A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,6 +358,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialApp/SocialApp-Prefix.pch";
 				INFOPLIST_FILE = "SocialApp/SocialApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SocialApp\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,6 +374,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialApp/SocialApp-Prefix.pch";
 				INFOPLIST_FILE = "SocialApp/SocialApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SocialApp\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

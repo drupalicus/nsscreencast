@@ -54,7 +54,7 @@ enum {
 - (void)configureCell:(MenuCell *)cell forIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case MenuHomeRow:
-            cell.label.text = @"Home";
+            cell.label.text = @"Home German";
             break;
             
         case MenuAboutRow:
